@@ -14,21 +14,22 @@ class ViewController: UIViewController
     @IBOutlet weak var firstButton: UIButton!
     @IBAction func firstMethod(_ sender: UIButton)
     {
-        if ( firstButton.backgroundColor == .purple)
-        {
-            firstButton.backgroundColor = .cyan
-        }
-        else
-        {
-            firstButton.backgroundColor = .purple
-        }
+//        if ( firstButton.backgroundColor == .purple)
+//        {
+//            firstButton.backgroundColor = .cyan
+//        }
+//        else
+//        {
+//            firstButton.backgroundColor = .purple
+//        }
         view.backgroundColor = createRandomColor()
+        firstButton.backgroundColor = createRandomColor()
     }
     
     private func createRandomColor() -> UIColor
     {
         let newColor :UIColor
-        let redValue :CGFloat = CGFloat(Double (arc4random_uniform(256)) / 2.55)
+        let redValue :CGFloat = CGFloat(Double (arc4random_uniform(256)) / 255.0)
         let greenValue :CGFloat = CGFloat(Double (arc4random_uniform(256)) / 255.00)
         let blueValue :CGFloat = CGFloat(Double (arc4random_uniform(256)) / 255.00)
         newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))

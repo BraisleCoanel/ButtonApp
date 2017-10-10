@@ -20,7 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Be-Bl-Plx">
                                 <rect key="frame" x="154" y="318" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="UGUGGH"/>
+                                <state key="normal" title="UGUGGH">
+                                    <color key="titleColor" red="0.69958775016076769" green="0.2445038187570685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7v-1w-T3t"/>
                                 </connections>
