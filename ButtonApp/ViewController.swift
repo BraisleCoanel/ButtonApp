@@ -14,7 +14,7 @@ class ViewController: UIViewController
     private func scarf() -> UIColor
     {
         let createColorScarf :UIColor
-        createColorScarf = UIColor(red: 255, green: 36, blue: 0, alpha: CGFloat(1.0))
+        createColorScarf = UIColor(red: 255, green: 0, blue: 36, alpha: 0)
         
         return createColorScarf
     }
