@@ -8,22 +8,45 @@
 
 import UIKit
 
+
 class ViewController: UIViewController
 {
-   
+    private func scarf() -> UIColor
+    {
+        let createColorScarf :UIColor
+        createColorScarf = UIColor(red: 255, green: 36, blue: 0, alpha: CGFloat(1.0))
+        
+        return createColorScarf
+    }
     @IBOutlet weak var firstButton: UIButton!
     @IBAction func firstMethod(_ sender: UIButton)
     {
-//        if ( firstButton.backgroundColor == .purple)
-//        {
-//            firstButton.backgroundColor = .cyan
-//        }
-//        else
-//        {
-//            firstButton.backgroundColor = .purple
-//        }
+        if ( firstButton.backgroundColor == .purple)
+        {
+            firstButton.backgroundColor = .cyan
+        }
+        else if (firstButton.backgroundColor == .cyan)
+        {
+            firstButton.backgroundColor = .red
+        }
+        else if (firstButton.backgroundColor == .red)
+        {
+            firstButton.backgroundColor = .darkGray
+        }
+        else if (firstButton.backgroundColor == .darkGray)
+        {
+            firstButton.backgroundColor = .magenta
+        }
+        else if (firstButton.backgroundColor == .magenta)
+        {
+            firstButton.backgroundColor = scarf()
+        }
+        else
+        {
+            firstButton.backgroundColor = .purple
+        }
         view.backgroundColor = createRandomColor()
-        firstButton.backgroundColor = createRandomColor()
+//        firstButton.backgroundColor = createRandomColor()
     }
     
     private func createRandomColor() -> UIColor
