@@ -8,13 +8,13 @@
 
 import UIKit
 
-
 class ViewController: UIViewController
 {
+    private lazy var colorTool : ColorTools = ColorTools()
     private func scarf() -> UIColor
     {
         let createColorScarf :UIColor
-        createColorScarf = UIColor(red: 255, green: 0, blue: 36, alpha: CGFloat(1.0))
+        createColorScarf = UIColor(red: 255, green: 36, blue: 0, alpha: CGFloat(1.0))
         
         return createColorScarf
     }
@@ -49,7 +49,7 @@ class ViewController: UIViewController
 //        firstButton.backgroundColor = createRandomColor()
     }
     
-    private func createRandomColor() -> UIColor
+    public func createRandomColor() -> UIColor
     {
         let newColor :UIColor
         let redValue :CGFloat = CGFloat(Double (arc4random_uniform(256)) / 255.00)
@@ -60,6 +60,7 @@ class ViewController: UIViewController
         
         return newColor
     }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
