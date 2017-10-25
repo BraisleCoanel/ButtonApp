@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B74B80721F8FF99800C0EA35 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B80711F8FF99800C0EA35 /* ColorTools.swift */; };
+		B7B392671F9FB8590067B37D /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B392661F9FB8590067B37D /* ThirdScreenViewController.swift */; };
 		B7C77CCC1F8D3E61001C47BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C77CCB1F8D3E61001C47BF /* AppDelegate.swift */; };
 		B7C77CCE1F8D3E61001C47BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C77CCD1F8D3E61001C47BF /* ViewController.swift */; };
 		B7C77CD11F8D3E61001C47BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C77CCF1F8D3E61001C47BF /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		B74B80711F8FF99800C0EA35 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
+		B7B392661F9FB8590067B37D /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
 		B7C77CC81F8D3E61001C47BF /* ButtonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C77CCB1F8D3E61001C47BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7C77CCD1F8D3E61001C47BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 				B7C77CCB1F8D3E61001C47BF /* AppDelegate.swift */,
 				B7C77CCD1F8D3E61001C47BF /* ViewController.swift */,
 				B7E5B75D1F953BC000782DFC /* SecondScreenViewController.swift */,
+				B7B392661F9FB8590067B37D /* ThirdScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E5B75E1F953BC000782DFC /* SecondScreenViewController.swift in Sources */,
+				B7B392671F9FB8590067B37D /* ThirdScreenViewController.swift in Sources */,
 				B7C77CCE1F8D3E61001C47BF /* ViewController.swift in Sources */,
 				B7C77CCC1F8D3E61001C47BF /* AppDelegate.swift in Sources */,
 				B74B80721F8FF99800C0EA35 /* ColorTools.swift in Sources */,
@@ -315,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ButtonApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ButtonApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.ButtonApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ButtonApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ButtonApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.ButtonApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
